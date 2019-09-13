@@ -19,8 +19,8 @@
 				{{ range (where .Data.Pages "Type" "homeproduct")}}
 					<div class="col-sm-4 mt-3 pro1">							
 						<div style="box-shadow: -2px 5px 10px 4px #f1f1f1; padding: 10px;">								
-							{{ with .Params.image }}<img src="{{ . | absURL }}" class="img-responsive" style="width:100%" alt="Image">{{end}}
-							<p class="h2">{{ with .Title }} {{ . | safeHTML }} {{ end }}</p>
+							<a class="nav-link" href="{{ .Params.productlink | absURL }}">{{ with .Params.image }}<img src="{{ . | absURL }}" class="img-responsive" style="width:100%" alt="Image" />{{end}}</a>
+							<p class="h2"><a class="nav-link" href="{{ .Params.productlink | absURL }}">{{ with .Title }} {{ . | safeHTML }} {{ end }}</a></p>
 							<p class="h5">{{ with .Description }} {{ . | safeHTML }} {{ end }}</p>								
 						<div class="row">
 						<div class="col-sm-6"><a href="#" class="text-left acolor">Order now</a></div>
@@ -31,7 +31,7 @@
 				{{end}}                               
 			</div>
 		</div>            
- </section>
+ </section> 
 {{end}}
 
 

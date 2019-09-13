@@ -59,17 +59,6 @@ summaryLength = "7"
 [params.header]
 enable = true
 
-[[params.header.headerlinks]]
-headerlink = "My account"
-URL = "javascript:void(0);"
-
-[[params.header.headerlinks]]
-headerlink = "Phasellus iaculis"
-URL = "javascript:void(0);"
-
-[[params.header.headerlinks]]
-headerlink = "sign in or create an account"
-URL = "javascript:void(0);"
 
 [[params.header.headerlinks]]
 headerlink = "<i class=\"fa fa-shopping-cart\" aria-hidden=\"true\"></i>"
@@ -201,7 +190,14 @@ subtitle="NEED SKIN LIGHTENING? CASPAH WILL SHOW YOU RESULT."
 url="images/bottels.png"
 
 
+#offers area
+[params.offers]
+enable = true
 
+#client-testi
+[params.clienttesti]
+enable = true
+title="** All fields are required for a valid submission.**"
 #Footer 
 
 [params.footers]

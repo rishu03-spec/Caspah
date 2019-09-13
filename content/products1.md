@@ -5,5 +5,6 @@ draft: true
 type: "homeproduct"
 image: "images/caspah_landing-2_24.gif"
 description: "Lightening cream"
+productlink: "../intimate-lightening-cream"
 ---
 

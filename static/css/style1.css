@@ -753,6 +753,9 @@ ul {
 
 } 
   @media screen and (max-width: 575px){
+    .testimonial p{
+      font-size:11px;
+    }
     .cardd{
       float:left;
     }
@@ -1325,4 +1328,141 @@ margin-bottom: 3em;
 
       }
 
+/*------------- intimate area ------------*/
+.form-group {
+  margin-bottom: 0.6rem;
+}
+img.img-responsive.checkmark {
+  width: 20px !important;
+}
 
+.wrappr p{
+line-height: 2em;
+text-align: justify;
+}
+
+.wrappr ul li{
+line-height: 2em;
+}
+
+.layer_image {
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 4em;
+}
+
+.layer_image img {
+  width: 30%;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 767px) {
+  .layer_image img {
+    width: 90%;
+  }
+}
+/*----- varginal bleaching ----*/
+
+form.testimonial_form label {
+  color: #0088cc;
+}
+
+input.btn.btn-primary {
+
+background-color:  #0088cc;
+}
+
+.testimonial_form{
+width: 70%;
+margin:0px auto;
+}
+.name{
+float: left;
+}
+.form-group {
+  margin-bottom: 0.6rem;
+}
+.anal_heading p {
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 0.9em;
+}
+
+.first_input {
+padding-left: 0;
+}
+
+.second_input {
+padding-right: 0;
+}
+.container.table {
+    border: 6px solid #0078bb;
+    border-radius: 10px;
+}
+.directions {
+text-align: center;
+padding-top: 1em;
+padding-bottom: 1em;
+}
+
+.wrappr p{
+line-height: 2em;
+text-align: justify;
+}
+
+.wrappr ul li{
+line-height: 2em;
+}
+
+.layer_image {
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 4em;
+}
+
+.layer_image img {
+  width: 30%;
+}
+
+strong.heading_anal {
+  font-size: 20px;
+  color: #03244f;
+}
+
+.wrap_first{
+float: left;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 767px) {
+
+.layer_image img {
+  width: 90%;
+      }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 639px) {
+
+.wrap_first{
+  padding: 0;
+}
+
+.wrap_first p{
+  font-size: 10px;
+}
+}
+
+@media only screen and (min-width: 280px) and (max-width: 639px) {
+
+  .first_input {
+      padding-right: 0;
+  }
+
+  .second_input{
+    padding-left: 0;
+  }
+
+  .testimonial_form {
+      width: 85%;
+      margin: 0px auto;
+  }
+
+}
