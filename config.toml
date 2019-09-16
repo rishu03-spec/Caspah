@@ -59,10 +59,9 @@ summaryLength = "7"
 [params.header]
 enable = true
 
-
 [[params.header.headerlinks]]
-headerlink = "<i class=\"fa fa-shopping-cart\" aria-hidden=\"true\"></i>"
-URL = "javascript:void(0);"
+headerlink = "<i class=\"fa fa-shopping-cart\" aria-hidden=\"true\" style=\"font-size:20px\"></i>"
+URL = "../cart"
 
 [[params.header.headersocials]]
 headersocial = "<i class=\"fa fa-twitter-square pro2 mr-2\" aria-hidden=\"true\"  style=\"font-size: 20px;cursor:pointer;\"></i>"
@@ -97,33 +96,33 @@ url =  "images/bottels.png"
 
 [[params.heroArea.feature1]]
 features1 = "No Hydroquinone"
-URL = "images/leaf.png"
+URL = "../images/leaf.png"
 
 [[params.heroArea.feature1]]
 features1 = "Safe and natural ingredients"
-URL = "images/leaf.png"
+URL = "../images/leaf.png"
 
 [[params.heroArea.feature1]]
 features1 = "Work on all skin type"
-URL = "images/leaf.png"
+URL = "../images/leaf.png"
 
 [[params.heroArea.feature1]]
 features1 = "Can be use on senstive skin"
-URL = "images/leaf.png"
+URL = "../images/leaf.png"
 
 #feature2
 
 [[params.heroArea.feature2]]
 features2 = "No Perfumes and paraben free"
-URL = "images/leaf.png"
+URL = "../images/leaf.png"
 
 [[params.heroArea.feature2]]
 features2 = "45 days gurantee"
-URL = "images/leaf.png"
+URL = "../images/leaf.png"
 
 [[params.heroArea.feature2]]
 features2 = "Discreet and free shipping"
-URL = "images/leaf.png"
+URL = "../images/leaf.png"
 
 #gallery item
 

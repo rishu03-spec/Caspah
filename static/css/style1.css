@@ -10,6 +10,7 @@
     font-family:Caspah;
    
   }
+  
   .searchForm{
     width:100%;
   }
@@ -728,6 +729,16 @@ ul {
             width: 100px;
     }
 }
+@media only screen and (min-width: 576px) and (max-width: 767px)  {
+  p.caspah_text{        
+  width: 90%;
+  font-size: 16px;
+  line-height: 21px;
+ }
+ .caspah_product h3{
+  font-size: 1.25rem!important;
+ }
+}
  @media only screen and (min-width: 576px) and (max-width: 639px)  {
    p.caspah_text{        
    width: 90%;
@@ -1367,7 +1378,6 @@ form.testimonial_form label {
 }
 
 input.btn.btn-primary {
-
 background-color:  #0088cc;
 }
 
@@ -1466,3 +1476,4 @@ float: left;
   }
 
 }
+
