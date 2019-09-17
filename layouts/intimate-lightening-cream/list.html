@@ -23,11 +23,10 @@
   </div>
 </section>
 
-<section class="wrappr">
+<section class="wrappr" style="clear: both;">
   <div class="container">
     <div class="col-md-12 col-lg-12 col-sm-12">
       <p>{{.Params.text1}}</p>
-
       <ul>
         <li><img src="../images/checkmark.png" class="img-responsive checkmark"> {{.Params.listItem1}}</li>
         <li><img src="../images/checkmark.png" class="img-responsive checkmark"> {{.Params.listItem2}}</li>
@@ -38,19 +37,14 @@
         <li><img src="../images/checkmark.png" class="img-responsive checkmark"> {{.Params.listItem7}}</li>
         <li><img src="../images/checkmark.png" class="img-responsive checkmark"> {{.Params.listItem8}}</li>
       </ul>
-
       <p>{{with .Params.text2}}{{ . | safeHTML }} {{ end }}</p>
-      
     </div>
-
     <div class="col-md-12 col-lg-12 col-sm-12">
       <div class="layer_image">
         <img src="../images/Layer_34.png" class="img-responsive">
       </div>
     </div>
-    
   </div>
-  
 </section>
 {{partial "we_accept.html" . }}
 

@@ -6,24 +6,24 @@
   <div class="col-md-12 col-12 col-sm-12">
     <div class="col-md-4 col-4 col-sm-4 col-12 products_page">
       <div class="caspah_product">
-            {{ with .Params.offerImg1 }}<img src="{{ . | absURL }}" class="img-responsive" alt="Image">{{end}}        
+        <a href="../cart">  {{ with .Params.offerImg1 }}<img src="{{ . | absURL }}" class="img-responsive" alt="Image">{{end}} </a>       
       </div>
     </div>
     <div class="col-md-4 col-4 col-sm-4 col-12 products_page">
       <div class="caspah_product">
-            {{ with .Params.offerImg2 }}<img src="{{ . | absURL }}" class="img-responsive" alt="Image">{{end}}       
+        <a href="../cart">  {{ with .Params.offerImg2 }}<img src="{{ . | absURL }}" class="img-responsive" alt="Image">{{end}} </a>      
       </div>
     </div>
     <div class="col-md-4 col-4 col-sm-4 col-12 products_page">
       <div class="caspah_product">
-            {{ with .Params.offerImg3 }}<img src="{{ . | absURL }}" class="img-responsive" alt="Image">{{end}}        
+        <a href="../cart">  {{ with .Params.offerImg3 }}<img src="{{ . | absURL }}" class="img-responsive" alt="Image">{{end}}</a>        
       </div>
     </div>
   </div>
   </div>
 </section>
 
-<section class="wrappr">
+<section class="wrappr" style="clear: both;">
   <div class="container">
     <div class="col-md-12 col-lg-12 col-sm-12">
       <p>{{.Params.text1}}</p>
