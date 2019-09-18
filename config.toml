@@ -241,6 +241,10 @@ catogry = "REFUND-POLICY"
 URL = "refund_policy"
 
 [[params.footers.catogries]]
+catogry = "SHIPPING-POLICY"
+URL = "shipping-policy"
+
+[[params.footers.catogries]]
 catogry = "WHOLESALE-ENQUIRY"
 URL = "wholesale-inquiry"
 

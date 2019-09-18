@@ -33,34 +33,32 @@
 {{ end }}
 <div class="col-sm-12 h1 text-primary text-center mt-5 h1 pro1">{{.Title}}</div>
 <div class="col-sm-12 h1 text-primary text-center mt-5" style="margin-bottom: 0.3em; color: #032248 !important">{{.Params.description}} </div>
-<h3 class="choose_perfect" style="text-align: center;">{{ .Content }}</h3>
+<h3 class="choose_perfect" style="text-align: center;padding: 10px;">{{ .Content }}</h3>
 
 <section class="testi_text">
 
 <div class="container text-center">
-<div class="col-md-12 col-12 col-sm-12">
      <div class="row">  
     {{ range (where .Data.Pages "Type" "product")}}
-  <div class="col-md-4 col-4 col-sm-4 col-12 pro1">
+  <div class="col-sm-4 mt-3 pro1">
     <div class="caspah_product"  style="box-shadow: -2px 5px 10px 4px #f1f1f1; padding: 10px;">
         {{ with .Params.image }}<img src="{{ . | absURL }}" class="img-responsive" style="width:100%" alt="Image">{{end}}
      <h3 style="text-align:center;">{{ with .Title }} {{ . | safeHTML }} {{ end }}</h3>
-     <p style="text-align:center;">{{ with .Description }} {{ . | safeHTML }} {{ end }}</p>
-     <div class="col-12 col-md-12 col-sm-12 order">
+     <p style="text-align:center;">{{ with .Description }} {{ . | safeHTML }} {{ end }}</p>     
         <div class="row">
-						<div class="col-6 col-md-6 col-sm-12"><a href="#" class="text-left acolor" style="color: #f48e8a;">Order now</a></div>
-						<div class="col-6 col-md-6 col-sm-12 star"><span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span></div>
-						</div>
-    </div>
+						<div class="col-md-6 col-lg-6 col-sm-12 col-6"><a href="../cart" class="text-left acolor" style="color: #f48e8a;">Order now</a></div>
+						<div class="col-md-6 col-lg-6 col-sm-12 col-6">              
+              <img src="../images/star.png" class="ice">
+              <img src="../images/star.png" class="ice">
+              <img src="../images/star.png" class="ice">
+              <img src="../images/star.png" class="ice">
+              <img src="../images/star1.png" class="ice">
+            </div>
+				</div>   
     </div>
   </div>
   {{end}} 
 </div> 
-</div>
 </div>
 </section>
 
@@ -83,13 +81,14 @@
                 <li style="margin-top:10px;"><img src="../images/tick.png" class="img-responsive tickmark">  <span style="margin-left:8px;">{{ with .Params.description2 }} {{ . | safeHTML }} {{ end }}</span></li>
                 <li style="margin-top:10px;"><img src="../images/tick.png" class="img-responsive tickmark">  <span style="margin-left:8px;">{{ with .Params.description3 }} {{ . | safeHTML }} {{ end }}</span></li>
               </ul>
-              <div class="get_caspah" style="margin-top: 40px;margin-left: 0px;margin-bottom:70px;">
+              <div class="get_caspah" style="margin-top: 40px;margin-left: 0px;margin-bottom:1px;">
               <button class="btn btn btn-primary caspah_now" >Get the Caspah Now!</button>
               </div>
             </div>
 
 
             <div class="col-md-5 co-sm-12 girlImg"  style="background-image: url(../images/slide-cosmetics-3.png);">
+             
               <!-- <img src="../images/slide-cosmetics-3.png" class="img-responsive" style="width:85%;"> -->
             </div>
         </div>

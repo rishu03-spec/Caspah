@@ -171,7 +171,7 @@ ul{
     /* background-image: url("images/image_2019_08_17T05_53_22_911Z.png"); */
     background-size: cover;
     height: 550px;  
-    margin-top: 30px;
+    margin-top: 0px;
 	background-repeat: no-repeat;
     width: 100%;
 }
@@ -234,11 +234,11 @@ ul{
 
 .fa-quote-left:before {
     content: "\f10d";
-    font-size: 7px;
+    font-size: 12px;
 }
 .fa-quote-right:before {
     content: "\f10e";
-    font-size: 7px;
+    font-size: 12px;
     top: 2px;
 }
     .text-block3 
@@ -468,9 +468,21 @@ ul {
 @media only screen and (min-width: 768px) and (max-width: 967px)  {
    p.caspah_text{        
 		width: 90%;
-  }
+  }  
 }
-
+@media only screen and (min-width: 768px) and (max-width: 991px)  { 
+ p.h2 {
+   font-size: 1.7rem;
+   }
+   p.h5 {
+     font-size: 1.3rem;
+ }
+ .ice {
+  height: 19px;
+  width: 16%;
+  color: rgb(202, 96, 57);
+}
+}
 @media screen and (max-width:991px) {
   .searchForm{
     width:50%;
@@ -641,8 +653,11 @@ ul {
   }
   @media only screen and (min-width: 359px) and (max-width: 767px) {
     p.h2 {
-    font-size: 1.3rem;
+    font-size: 1.07rem;
     }
+    p.h5 {
+      font-size: 1.05rem;
+  }
    }
    
    @media only screen and (min-width: 280px) and (max-width: 767px) {
@@ -847,8 +862,8 @@ h1 .display-4 {
  @media only screen and (min-width: 320px) and (max-width: 479px) {
 	 .text-white {
 	  font-size: 12px !important;
-	  padding-left: 0px !important;
-	  padding-right: 0px !important;
+	  padding-left: 10px !important;
+	  padding-right: 10px !important;
 	}
 	.text-left{
 	  text-align: center !important;
@@ -976,8 +991,8 @@ h1 .display-4 {
 
   .text-white {
     font-size: 10px !important;
-    padding-left: 0px !important;
-    padding-right: 0px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
   .text-left{
     text-align: center !important;
@@ -1069,7 +1084,9 @@ color: orange;
 }
        
 /****************************************sitemap************************************************/
-
+.fa.fa-star{
+  font-size:20px;
+}
 .sitemap_wrap{
   float:left;
 }
@@ -1090,7 +1107,7 @@ color: orange;
  }
 
  .sitemap_wrap2 ul li{
-  list-style: circle;
+  /* list-style: circle; */
   line-height: 2em;
  }
 
@@ -1101,7 +1118,8 @@ color: orange;
 
  @media only screen and (min-width: 280px) and (max-width: 639px) {
   .sitemap_wrap2{
-    text-align: center;
+    text-align: left;
+    margin-left:1%;
   }
  }
  
@@ -1456,7 +1474,7 @@ float: left;
 }
 
 .wrap_first p{
-  font-size: 10px;
+  font-size: 14px;
 }
 }
 

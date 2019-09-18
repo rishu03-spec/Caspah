@@ -93,7 +93,7 @@
             </div>            
                 
             <div class="panel-footer" style="margin-bottom:14px;"> 
-                <a href="#" class="btn btn-primary continue" style="background-color:#3089c9;border:#3089c9">Continue</a>
+                <a  id="continue-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false" class="btn btn-primary continue" style="background-color:#3089c9;border:#3089c9">Continue</a>
             </div>
     </form>
 </div>
@@ -165,8 +165,9 @@
         </div>             
         
         <div class="panel-footer" style="margin-bottom:14px;"> 
-        <a href="#" class="btn btn-secondary backbtn">Back</a>
-            <input type="submit" class="btn btn-primary continue" value="Continue">
+            <a id="back-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-profile" aria-selected="true" class="btn btn-secondary backbtn">Back</a>
+            <a  id="continue-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false" class="btn btn-primary continue" style="background-color:#3089c9;border:#3089c9">Continue</a>
+            <!-- <input type="submit" class="btn btn-primary continue" value="Continue"> -->
         </div>
     </form>
 </div>
@@ -190,8 +191,9 @@
             </div>
 
         <div class="shipping_methd">
-            <a href="#" class="btn btn-secondary backbtn">Back</a>
-            <input type="submit" class="btn btn-primary continue" value="Continue">
+            <a id="back-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false" class="btn btn-secondary backbtn">Back</a>
+            <a id="continue-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false" class="btn btn-primary continue" style="background-color:#3089c9;border:#3089c9">Continue</a>
+            <!-- <input type="submit" class="btn btn-primary continue" value="Continue"> -->
             <div class="col-md-12 col-lg-12 col-sm-12 col-12" style="clear: both;"></div>
         </div>
                             
@@ -217,15 +219,16 @@
                 </div>
 
                 <div class="shipping_methd">
-                <a href="#" class="btn btn-secondary backbtn">Back</a>
-                <input type="submit" class="btn btn-primary continue" value="Continue">
+                <a id="back-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false" class="btn btn-secondary backbtn">Back</a>
+                <a id="continue-payemnt-tab" data-toggle="tab" href="#nav-payment" role="tab" aria-controls="nav-payment" aria-selected="false" class="btn btn-primary continue" style="background-color:#3089c9;border:#3089c9">Continue</a>
+                <!-- <input type="submit" class="btn btn-primary continue" value="Continue"> -->
                 <div class="col-md-12 col-lg-12 col-sm-12 col-12" style="clear: both;"></div>
             </div>
 
 </div> 
 
 <div class="tab-pane fade" id="nav-payment" role="tabpanel" aria-labelledby="nav-payemnt-tab">
-        <div class="col-sm-12 h3 text-primary text-center mt-5 affilate_heading" style="margin-bottom: 0.3em; color: #032248 !important;margin-top: 0rem!important;">Checkout Confirmation</div>
+        <div class="col-sm-12 h3 text-primary text-center mt-5 affilate_heading" style="margin-bottom: 0.3em; color: #032248 !important;margin-top: 1rem!important;">Checkout Confirmation</div>
         <div class="col-md-12 col-lg-12 col-sm-12 col-12">
 
             <div class="col-md-4 col-lg-4 col-sm-4 col-12 united_states">
@@ -291,7 +294,7 @@
                     </table>
             </div>
             <div class="shipping_methd">
-            <a href="#" class="btn btn-secondary backbtn">Back</a>
+            <a id="back-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false" class="btn btn-secondary backbtn">Back</a>
             <input type="submit" class="btn btn-success" value="Confirm Order" style="float:right;background-color: #2aad48;border:#2aad48;color:#fff;">
             <div class="col-md-12 col-lg-12 col-sm-12 col-12" style="clear: both;"></div>
             </div>
@@ -302,22 +305,24 @@
 </div>
     
 </div>
+
 </div>
 </div>
 
 <!-- ********************************** -->
      
-      <div class="col-md-12 col-lg-12 col-sm-12 col-12 products_page1">
+    <div class="col-md-12 col-lg-12 col-sm-12 col-12 products_page1">
         <div class="checkout_form">
-    
+
         </div>
-      </div>
-      </div>
-     </div>
+    </div>
+  </div>
+</div>
 
 </section>
 <link rel="stylesheet" href="{{"css/checkoutStyle.css" | absURL}} ">
-
+{{"<!-- jQuery Nav -->" | safeHTML}}
+<script src="{{ "js/checkoutScript.js" | absURL}}"></script>
 {{partial "we_accept.html" . }}
 
 {{ end }}

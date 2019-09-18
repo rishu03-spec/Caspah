@@ -2,37 +2,27 @@
 
 <div class="container">
 	<div class="row" style="margin-left:0px;margin-right:0px;margin-top: 50px;margin-bottom:65px;">
-		<div class="col-md-8 col-center m-auto">					 		
+		<div class="col-lg-8 col-md-10 col-sm-12 col-12 col-center m-auto">					 		
 			<div style="text-align: center;font-size: 25px;letter-spacing: 4px;color: #03234a;">{{ with .Site.Params.testimonials.title }} {{ . | safeHTML }} {{ end }}</div>
 			<div style="text-align: center;font-size:40px;color:#03234a;font-family:Times New Roman;">{{ with .Site.Params.testimonials.subtitle }} {{ . | safeHTML }} {{ end }}</div>
 			
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
-
 				<ol class="carousel-indicators">
 					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 					<li data-target="#myCarousel" data-slide-to="1" class=""></li>
 					<li data-target="#myCarousel" data-slide-to="2" class=""></li>
 				</ol>
-
 				<div class="carousel-inner" style="box-shadow: 0 0 20px #ccc;">
 						{{ range $index, $value := where .Data.Pages "Type" "testimonial" }}
 						{{ if (eq $index 0) }}
 							
 							<div class="item carousel-item active">
-								<div class="testimonial" style="background-color:#f58f8b;color:white;height:220px;overflow:hidden;">
-									
-									<p style="text-align:left;margin-bottom:5px;margin-top:10px;padding-left:16px;width:30px;">
-									<!-- <i class="fa fa-quote-left float-left fa_fad" aria-hidden="true"></i> -->
-									<i class="fa fa-quote-left float-left qoutes1" aria-hidden="true"></i>
-									</p>
-									<!-- <p class="testimonial" style="margin-bottom:0px;margin-bottom: 0px;padding-left: 25px;padding-right: 25px;letter-spacing: 1px;line-height: 18px;height: 15px;"> -->
-											{{ .Content }}
-									<!-- </p> -->
-									<p style="text-align:right;padding-right:16px;"> <i class="fa fa-quote-right qoutes1" aria-hidden="true"></i></p>
-									
+								<div class="testimonial" style="background-color:#f58f8b;color:white;height:280px;overflow:hidden;">
+									<p class="testimonial" style="margin-bottom:0px;margin-top: 2px;padding-left: 25px;padding-right: 25px;letter-spacing: 1px;line-height: 18px;height: 15px;">
+											{{ with .Params.message1 }} {{ . | safeHTML }} {{ end }}
+									</p>									
 								</div>
-								<div class="img-box" style="margin-top:-47px;width:85px;height:85px;">
-									<!-- <img src="https://img5.zergnet.com/3822602_300.jpg" alt="" /> -->
+								<div class="img-box" style="margin-top:-47px;width:85px;height:85px;">									
 									{{ with .Params.image }}<img src="{{ . | absURL }}" alt="Image">{{end}}														
 								</div>
 								<p style="margin-bottom:0px;color:#021942;font-size: 20px;"><b>{{ with .Title }} {{ . | safeHTML }} {{ end }}</b></p>
@@ -40,26 +30,18 @@
 							</div>
 						{{else}}
 							<div class="item carousel-item">
-								<div style="background-color:#f58f8b;color:white;height:220px;overflow:hidden;">
-									
-									<p style="text-align:left;margin-bottom:5px;margin-top:10px;padding-left:16px;width:30px;">
-									<i class="fa fa-quote-left float-left qoutes1" aria-hidden="true"></i>
-									</p>
-									<p class="testimonial" style="margin-bottom:0px;margin-bottom: 0px;padding-left: 25px;padding-right: 25px;letter-spacing: 1px;line-height: 18px;height: 15px;">
-											{{ .Content }}
-									</p>
-									<p style="text-align:right;padding-right:16px;"> <i class="fa fa-quote-right qoutes1" aria-hidden="true"></i></p>
-									
+								<div style="background-color:#f58f8b;color:white;height:280px;overflow:hidden;">									
+									<p class="testimonial" style="margin-bottom:0px;margin-top: 2px;padding-left: 25px;padding-right: 25px;letter-spacing: 1px;line-height: 18px;height: 15px;">
+											{{ with .Params.message1 }} {{ . | safeHTML }} {{ end }}
+									</p>									
 								</div>
-								<div class="img-box" style="margin-top:-47px;width:85px;height:85px;">
-									<!-- <img src="https://img5.zergnet.com/3822602_300.jpg" alt="" /> -->
+								<div class="img-box" style="margin-top:-47px;width:85px;height:85px;">									
 									{{ with .Params.image }}<img src="{{ . | absURL }}" alt="Image">{{end}}														
 								</div>
 								<p style="margin-bottom:0px;color:#021942;font-size: 20px;"><b>{{ with .Title }} {{ . | safeHTML }} {{ end }}</b></p>
 								<p style="color:#c8c8c8;font-size:15px;">{{ with .Description }} {{ . | safeHTML }} {{ end }}</p>
 							</div>
-						{{end}}
-						
+						{{end}}						
 					{{end}}		
 				</div>
 				<a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">

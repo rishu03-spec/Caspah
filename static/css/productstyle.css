@@ -101,6 +101,7 @@
   
   .testimonail_product p{
   color: #fff;
+  margin-bottom: 0px;
   }
   span.fa.fa-star {
     color: #fff;
@@ -119,6 +120,7 @@
   
   .text_section strong {
     color: #fff;
+    margin-top: 10px;
   }
   
   
@@ -213,6 +215,9 @@
     .logo_icons {
       margin-bottom: 3em;
     }
+    .girlImg{
+      height: 360px;
+  }
     }
    
     @media only screen and (min-width: 900px) and  (max-width: 1200px){
@@ -262,6 +267,7 @@
         button.btn.btn.btn-primary.caspah_now {
           font-size: 18px;         
       }
+     
        }
     @media only screen and (min-width: 576px) and  (max-width: 665px){
         
@@ -279,6 +285,9 @@
         button.btn.btn.btn-primary.caspah_now {
           font-size: 18px;         
       }  
+      .girlImg{
+        height: 360px;
+    }
        }
     @media only screen and (max-width: 575px) {
        .pro1{
@@ -289,7 +298,10 @@
        }    
        button.btn.btn.btn-primary.caspah_now {
         font-size: 18px;         
-    }   
+    }  
+    .girlImg{
+      height: 360px;
+  } 
       }
       @media only screen and (max-width: 558px) {
         .pro1{
@@ -299,9 +311,13 @@
          margin-top: 86%;
         }  
         button.btn.btn.btn-primary.caspah_now {
-          font-size: 18px;         
+          font-size: 15px;         
       }     
+      .girlImg{
+        height: 360px;
+    }
        }
+       
   @media only screen and (min-width: 280px)and(max-width: 480px)  {
     .lastimg {
       margin-bottom: 1em;

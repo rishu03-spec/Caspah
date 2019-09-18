@@ -23,8 +23,14 @@
 							<p class="h2"><a class="nav-link" href="{{ .Params.productlink | absURL }}">{{ with .Title }} {{ . | safeHTML }} {{ end }}</a></p>
 							<p class="h5">{{ with .Description }} {{ . | safeHTML }} {{ end }}</p>								
 						<div class="row">
-						<div class="col-sm-6"><a href="#" class="text-left acolor">Order now</a></div>
-						<div class="col-sm-6"><img src="images/star.png" class="ice"><img src="images/star.png" class="ice"><img src="images/star.png" class="ice"><img src="images/star.png" class="ice"><img src="images/star1.png" class="ice"></div>
+						<div class="col-md-6 col-lg-6 col-sm-12 col-6"><a href="../cart" class="text-left acolor">Order now</a></div>
+						<div class="col-md-6 col-lg-6 col-sm-12 col-6">
+							<img src="../images/star.png" class="ice">
+							<img src="../images/star.png" class="ice">
+							<img src="../images/star.png" class="ice">
+							<img src="../images/star.png" class="ice">
+							<img src="../images/star1.png" class="ice">
+						</div>
 						</div>
 						</div>
 					</div>
