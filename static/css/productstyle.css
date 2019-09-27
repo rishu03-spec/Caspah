@@ -20,7 +20,7 @@
     border-radius: 5px;
   }
 .cosmetics p {
-    padding-top: 5em;
+    padding-top: 3em;
   }
   
   button.btn.btn.btn-primary.caspah_now {
@@ -58,8 +58,8 @@
   .cosmetics{
   float: left;
   padding-top:0px;
-  padding-left:70px;
-  padding-right:30px;
+  padding-left:7%;
+  padding-right:7%;
   }
   
   .footer{
@@ -90,13 +90,15 @@
   }
   
   .testimonail_product {
-    background-image: url("../images/testmonial bc2.png");
+    /* background-image: url("../images/testmonial bc2.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+    background-color: #06253e;
     padding-top: 1.8em;
     padding-bottom: 10em;
     clear: both;
-    margin-bottom: 3em;
+    margin-bottom: 3em;    
+    /* overflow-y: auto; */
   }
   
   .testimonail_product p{
@@ -195,7 +197,7 @@
   @media only screen and (min-width: 280px) and (max-width: 639px) {
     .testimonail_product{
       padding-top: 0;
-      padding-bottom: 18em;
+      padding-bottom: 20em;      
     }
     
     .star_section {
@@ -290,7 +292,7 @@
     }
        }
     @media only screen and (max-width: 575px) {
-       .pro1{
+       .productPro1{
            margin-top:30px;
        }       
        .mainbg .btn{
@@ -304,7 +306,7 @@
   } 
       }
       @media only screen and (max-width: 558px) {
-        .pro1{
+        .productPro1{
             margin-top:30px;
         }
         .mainbg .btn{

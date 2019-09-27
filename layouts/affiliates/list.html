@@ -1,8 +1,18 @@
 {{ define "main" }}
 
-<div class="col-sm-12 h1 text-primary text-center mt-5 h1 pro1">{{.Title }}</div>
+<div class="col-sm-12 h1 text-primary text-center mt-5 h1 pro1" style="margin-bottom:20px;">{{.Title }}</div>
+<div class="container">
+<div class="row">
+    {{ range (where .Data.Pages "Type" "affiliateproduct")}}   
+    <div class="col-md-4 col-sm-4 col-12 sitemap_wrap">
+          {{ with .Params.image }}<img src="{{ . | absURL }}" class="img-responsive" alt="Image">{{end}}
+      <p class="h5 text-primary text-center">{{ with .Title }} {{ . | safeHTML }} {{ end }}</p> 
+    </div>
+   {{end}}
+</div>
+</div>
 <!-- panel group -->
-<div class="container text-justify">    
+<div class="container text-justify" style="min-height: 270px;margin-top:10px;clear: both;">    
     {{ .Content }}    
 </div>
 </div>

@@ -8,7 +8,7 @@
                 <div class="col-sm-4 text-left">                            
                     {{ with .Site.Params.heroImg }}<img src="{{ .url | absURL }}" class="bottels2 img-fluid">{{end}}
                 </div>
-                <div class="col-sm-4 text-left pro1">
+                <div class="col-sm-4 text-left pro1 productPro1">
                     <ul>
                         {{ range .Site.Params.heroArea.feature1 }}
                             <li><img src="{{ .URL }}" class="img-icon mainli" />{{.features1}}</li>
@@ -65,7 +65,7 @@
 <section class="mt-5">
     {{ range (where .Data.Pages "Type" "why")}}
   <div class="popular" style="background-color: #06264d;color:white;">
-    <div class="container" style="text-align:center;padding-top:15px;padding-bottom:15px;">
+    <div class="container pro1" style="text-align:center;padding-top:15px;padding-bottom:15px;">
       <h2 style="font-family: Times New Roman;">{{ with .Title }} {{ . | safeHTML }} {{ end }}</h2>
       
     </div>
@@ -87,7 +87,7 @@
             </div>
 
 
-            <div class="col-md-5 co-sm-12 girlImg"  style="background-image: url(../images/slide-cosmetics-3.png);">
+            <div class="col-md-5 co-sm-12 girlImg pro2"  style="background-image: url(../images/slide-cosmetics-3.png);">
              
               <!-- <img src="../images/slide-cosmetics-3.png" class="img-responsive" style="width:85%;"> -->
             </div>
@@ -100,7 +100,7 @@
 <section>
   <div class="container">
       {{ range (where .Data.Pages "Type" "protestimony")}}
-    <div class="col-sm-12 col-md-12 col-lg-12 h1 text-primary text-center mt-5" style="margin-bottom: 0.3em; color: #032248 !important">{{ with .Title }} {{ . | safeHTML }} {{ end }}</div>
+    <div class="col-sm-12 col-md-12 col-lg-12 h1 text-primary text-center mt-5 pro1" style="margin-bottom: 0.3em; color: #032248 !important">{{ with .Title }} {{ . | safeHTML }} {{ end }}</div>
 
     <div class="col-md-9 col-lg-9 col-sm-12 col-12 testimonail_product">
       <div class="col-md-4 col-lg-4 col-sm-4 col-6 col-12 star_section">
@@ -114,7 +114,7 @@
       </div>
       <div class="col-md-8 col-lg-8 col-sm-8 col-8 col-12 text_section">
         <strong>{{ with .Params.subtitle1 }} {{ . | safeHTML }} {{ end }}</strong>
-      <p>{{ with .Params.description1 }} {{ . | safeHTML }} {{ end }}</p>
+      <p class="text">{{ with .Params.description1 }} {{ . | safeHTML }} {{ end }}</p>
     </div>
     </div>
 
@@ -130,7 +130,7 @@
             </div>
       <div class="col-md-8 col-lg-8 col-sm-8 col-8 col-12 text_section">
           <strong>{{ with .Params.subtitle2 }} {{ . | safeHTML }} {{ end }}</strong>
-          <p>{{ with .Params.description2 }} {{ . | safeHTML }} {{ end }}</p>
+          <p class="text">{{ with .Params.description2 }} {{ . | safeHTML }} {{ end }}</p>
     </div>
 
     </div>
@@ -147,7 +147,7 @@
       </div>
       <div class="col-md-8 col-lg-8 col-sm-8 col-8 col-12 text_section">
           <strong>{{ with .Params.subtitle3 }} {{ . | safeHTML }} {{ end }}</strong>
-          <p>{{ with .Params.description3 }} {{ . | safeHTML }} {{ end }}</p>
+          <p class="text">{{ with .Params.description3 }} {{ . | safeHTML }} {{ end }}</p>
     </div>
     </div>
     {{end}}
@@ -157,22 +157,22 @@
 
 <section class="featured">
   <div class="container">
-    <div class="col-sm-12 col-md-12 col-lg-12 h1 text-primary text-center mt-5" style="margin-bottom: 1.3em; color: #032248 !important">As Featured In </div>
+    <div class="col-sm-12 col-md-12 col-lg-12 h1 text-primary text-center mt-5 pro1" style="margin-bottom: 1.3em; color: #032248 !important">As Featured In </div>
 
     <div class="col-sm-12 col-md-12 col-lg-12 col-12">
-      <div class="col-sm-3 col-md-3 col-lg-3 col-12 logo_icons">
+      <div class="col-sm-3 col-md-3 col-lg-3 col-12 logo_icons pro1">
         <img src="../images/FeaturedImg1.png">
       </div>
 
-      <div class="col-sm-3 col-md-3 col-lg-3 col-12 logo_icons">
+      <div class="col-sm-3 col-md-3 col-lg-3 col-12 logo_icons pro2">
         <img src="../images/FeaturedImg2.png">
       </div>
 
-      <div class="col-sm-3 col-md-3 col-lg-3 col-12 logo_icons">
+      <div class="col-sm-3 col-md-3 col-lg-3 col-12 logo_icons pro1">
         <img src="../images/FeaturedImg3.png">
       </div>
 
-      <div class="col-sm-3 col-md-3 col-lg-3 col-12 logo_icons">
+      <div class="col-sm-3 col-md-3 col-lg-3 col-12 logo_icons pro2">
         <img src="../images/FeaturedImg4.png">
       </div>
       
@@ -184,6 +184,21 @@
   </div>
 </section>
 <link rel="stylesheet" href="{{"css/productstyle.css" | absURL}} ">
+<script>
+  setTimeout(function()
+{
+	var max = 265;
+  var tot, str;
+  $('.text').each(function() {
+  	str = String($(this).html());
+  	tot = str.length;
+    str = (tot <= max)
+    	? str
+      : str.substring(0,(max + 1))+"...";
+    $(this).html(str);
+  });
+},100);
+</script>
 {{partial "we_accept.html" . }}
 
 {{ end }}

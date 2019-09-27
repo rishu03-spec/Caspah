@@ -2,7 +2,7 @@
 
 <div class="container">
 	<div class="row" style="margin-left:0px;margin-right:0px;margin-top: 50px;margin-bottom:65px;">
-		<div class="col-lg-8 col-md-10 col-sm-12 col-12 col-center m-auto">					 		
+		<div class="col-lg-8 col-md-8 col-sm-12 col-12 col-center m-auto">					 		
 			<div style="text-align: center;font-size: 25px;letter-spacing: 4px;color: #03234a;">{{ with .Site.Params.testimonials.title }} {{ . | safeHTML }} {{ end }}</div>
 			<div style="text-align: center;font-size:40px;color:#03234a;font-family:Times New Roman;">{{ with .Site.Params.testimonials.subtitle }} {{ . | safeHTML }} {{ end }}</div>
 			
@@ -17,7 +17,7 @@
 						{{ if (eq $index 0) }}
 							
 							<div class="item carousel-item active">
-								<div class="testimonial" style="background-color:#f58f8b;color:white;height:280px;overflow:hidden;">
+								<div class="testimonial" style="background-color:#f58f8b;color:white;height:auto;overflow:hidden;">
 									<p class="testimonial" style="margin-bottom:0px;margin-top: 2px;padding-left: 25px;padding-right: 25px;letter-spacing: 1px;line-height: 18px;height: 15px;">
 											{{ with .Params.message1 }} {{ . | safeHTML }} {{ end }}
 									</p>									
@@ -30,7 +30,7 @@
 							</div>
 						{{else}}
 							<div class="item carousel-item">
-								<div style="background-color:#f58f8b;color:white;height:280px;overflow:hidden;">									
+								<div class="testimonial" style="background-color:#f58f8b;color:white;height:auto;overflow:hidden;">									
 									<p class="testimonial" style="margin-bottom:0px;margin-top: 2px;padding-left: 25px;padding-right: 25px;letter-spacing: 1px;line-height: 18px;height: 15px;">
 											{{ with .Params.message1 }} {{ . | safeHTML }} {{ end }}
 									</p>									
@@ -54,4 +54,5 @@
 		</div>
 	</div>
 </div>
+
 {{end}}
