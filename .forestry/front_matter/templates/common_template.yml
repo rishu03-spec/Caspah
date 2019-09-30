@@ -18,6 +18,7 @@ fields:
   name: description
   label: description
 pages:
+- content/personal-information/infoProduct2.md
 - content/personal-information/infoProduct3.md
 - content/personal-information/infoProduct1.md
 - content/wholesale-inquiry/saleproduct2.md
