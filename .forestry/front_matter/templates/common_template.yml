@@ -18,6 +18,7 @@ fields:
   name: description
   label: description
 pages:
+- content/affiliates/affiliateProduct3.md
 - content/affiliates/affiliateProduct1.md
 - content/personal-information/infoProduct2.md
 - content/personal-information/infoProduct3.md
