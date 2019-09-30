@@ -50,3 +50,5 @@ fields:
 - type: text
   name: listItem9
   label: listItem9
+pages:
+- content/spot-lightening-cream/_index.md
