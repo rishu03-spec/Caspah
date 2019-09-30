@@ -3,7 +3,7 @@ title: 5 Skin Care Rituals You Should Be Doing Before Bed
 date: 2018-12-26T06:23:10.000+00:00
 image: "/images/Rectangle_1.png"
 blogImg1: "/images/singl2 1.png"
-blogImg2: "/images/single31.png"
+blogImg2: "/images/beautiful-brunette-.jpg"
 text1: "That’s all I’ve got & it’s nothing new. But my gratitude and holiday weekend
   survival tactics kept bringing me back to these people – so thankful for them in
   all areas of my life, and our history & future together.\nFind people with high
