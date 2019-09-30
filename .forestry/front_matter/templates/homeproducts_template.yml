@@ -21,4 +21,5 @@ fields:
   name: productlink
   label: productlink
 pages:
+- content/products3.md
 - content/products1.md
