@@ -1,7 +1,7 @@
 ---
-title: "Affiliate Signup"
-date: 2019-08-31T13:53:24+05:30
-draft: false
+title: Affiliate Signup
+date: 2019-08-31T08:23:24.000+00:00
+
 ---
 By filling out the signup form you acknowledge that you have read the terms and conditions, understand, and agree with them.
 
@@ -52,4 +52,4 @@ Liability
 
 We will not be liable for indirect or accidental damages (loss of revenue, commissions) due to affiliate tracking failures, loss of database files, and any results of "intents of harm" to the program or our website. We do not make any expressed or implied warranties with respect to the affiliate program and/or products sold at this site. We make no claim that the operation of the affiliate program and our website will be error-free and we will not be liable for any interruptions or errors.
 
-By submitting your application, you acknowledge that you have read the terms and conditions, understand, and agree with them. 
+By submitting your application, you acknowledge that you have read the terms and conditions, understand, and agree with them.
