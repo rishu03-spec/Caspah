@@ -21,5 +21,6 @@ fields:
   name: productlink
   label: productlink
 pages:
+- content/testimonial3.md
 - content/products3.md
 - content/products1.md
